@@ -1,12 +1,20 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #FAFAFA;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+
   .traveler {
+    background-color: beige;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -30,10 +38,8 @@ body {
     height: 2px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    margin-bottom: 39px;
     margin-top: 10px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     
   }
 
@@ -53,6 +59,7 @@ body {
     
   }
   
+
   li{
     list-style: none;
     text-align: center;
@@ -86,7 +93,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
+
+  .advantages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+  }
+
 
   .advantages li {     
     background-color: #FFFFFF;
@@ -99,11 +116,14 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 15px;
+    background-color: red;
+    
   }
+
 
   .advantages li img {
     background-color: blue;
-    margin-right: 10px;
+    margin-right: 29px;
   }
 
   .advantages li p {
@@ -111,16 +131,45 @@ body {
     text-align: left;
     font-size: 13px;
   }
+.content p{
+    margin-bottom: 28px;
+}
 
+.vlevo p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
  
     @media screen and (min-width: 640px) {
+        body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .traveler {
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+        h1 {
+        margin-top: 0px;
+        }
+
         ul {
             display: flex;
         }
 
+        .button1{
+            padding-top: 11px;
+            margin-top: 0px;
+            margin-right: 20px;
+            
+        }
+
         .button2 {
             margin-top: 0%;
+            
+            
         }
 
         .button {
@@ -131,10 +180,55 @@ body {
             display: flex;
             order: -1;
         }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+            
+        }
+        
+        .advantages li {
+            flex-direction: column;
+            margin: 10px;
+            
+        }
+
+        .advantages li img{
+            margin-right: 0px;
+            
+        
+        }
+        .advantages li p{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content p{
+            display: block;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .vlevo p{
+            display: block;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
     }
     
 
     @media screen and (min-width: 1100px) {
+        body{
+            margin-left: 81px;
+            margin-right: 81px;
+        }
+        .traveler{
+            margin-bottom: 0;
+        }
         .top {
             display: flex;        
         }
@@ -147,7 +241,52 @@ body {
         .container2 {
             display: flex;
         }
+
+        h1,
+        p,
+        h2 {
+           text-align: left;
+           
+    }
+      .buttons {
+         justify-content: left;
+        
+    }
+
+      .vlevo{
+        width: 50%;
+        margin-top: 60px;
+        margin-right: 94px;
+
+    
+    }
+     .container .content p {
+        margin-left: 50px;
+    }
+
+     .container .content h2 {
+        margin-left: 50px;
+    }
+
+     .container2 .content p {
+        margin-right: 50px;
+    }
+
+      h1::after{
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .advantages li{
+        margin-top: 80px;
+    }
+
+    .container .advantages li{
+        margin-bottom: 0;
     }
 
 
+    
+
+    }
    
