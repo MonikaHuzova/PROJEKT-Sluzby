@@ -8,13 +8,12 @@ html { box-sizing: border-box; }
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #FAFAFA;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
   .traveler {
-    background-color: beige;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -116,18 +115,15 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 15px;
-    background-color: red;
     
   }
 
 
   .advantages li img {
-    background-color: blue;
     margin-right: 29px;
   }
 
   .advantages li p {
-    background-color: yellow;
     text-align: left;
     font-size: 13px;
   }
@@ -176,8 +172,12 @@ body {
             align-items: center;
         }
 
-        .container .advantages {
+        .container .advantages,
+        .container2 .advantages {
             display: flex;
+        }
+
+        .container .advantages {
             order: -1;
         }
 
@@ -227,19 +227,26 @@ body {
             margin-right: 81px;
         }
         .traveler{
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
         .top {
-            display: flex;        
+            display: flex;
+            align-items: center;
+                   
         }
 
         .vlevo {
             order: -1;
+            width: 50%;
+            margin-top: 60px;
+            margin-right: 94px;
         }
 
         .container,
         .container2 {
             display: flex;
+            margin-top: 80px;
+            flex: 1 1 auto;
         }
 
         h1,
@@ -248,24 +255,26 @@ body {
            text-align: left;
            
     }
+
+
       .buttons {
          justify-content: left;
         
     }
-
-      .vlevo{
-        width: 50%;
-        margin-top: 60px;
-        margin-right: 94px;
-
     
+
+      .vlevo p{
+        margin-left: 0;
+        margin-right: 0;
     }
+
      .container .content p {
         margin-left: 50px;
     }
 
      .container .content h2 {
         margin-left: 50px;
+        
     }
 
      .container2 .content p {
@@ -277,16 +286,30 @@ body {
         margin-right: 0;
         
     }
-    .advantages li{
-        margin-top: 80px;
-    }
 
-    .container .advantages li{
+
+    .container .advantages li {
         margin-bottom: 0;
     }
 
+    .content{
+        text-align: center;
+        display: block;
+        width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
+   .advantages {
+        display: block;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
     
 
-    }
+    }   
+
+    
    
